@@ -1,0 +1,33 @@
+name: Feature request
+description: Ask for a new feature or a new device.
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you. Replies can take a week. For a large change, we agree on the approach here
+        before anyone writes a pull request.
+  - type: textarea
+    id: need
+    attributes:
+      label: What you need
+      description: The problem it solves for you, not only the solution.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: How it could work
+    validations:
+      required: false
+  - type: dropdown
+    id: help
+    attributes:
+      label: Can you help?
+      options:
+        - I can test it
+        - I can write a pull request
+        - I can give captures or logs from my device
+        - Not at this time
+    validations:
+      required: false
